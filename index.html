@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jay U Groups is an investment consulting brand connecting clients with trusted company partners for land, red sandalwood farming, documentation, and guided site visits.">
+    <meta property="og:title" content="Jay U Groups | Real Estate">
+    <meta property="og:description" content="Investment consulting for land, red sandalwood farming, trusted company partner coordination, documentation support, and guided site visits.">
+    <meta property="og:image" content="./assets/jay-u-groups-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="./assets/jay-u-groups-logo.png">
+    <title>Jay U Groups | Real Estate</title>
+    <link rel="icon" type="image/png" href="./assets/jay-u-groups-logo.png">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#home" aria-label="Jay U Groups home">
+            <span class="brand-mark">
+              <img src="./assets/jay-u-groups-logo.png" alt="" aria-hidden="true">
+            </span>
+            <span>
+              <strong>Jay U Groups</strong>
+              <small>Consulting | Partners | Documentation</small>
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Phases</a></li>
+              <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+              <li class="nav-item"><a class="nav-link" href="#legal">Legal</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section class="hero section-pad" id="home">
+          <div class="hero-grid container">
+            <div class="hero-copy">
+              <span class="eyebrow">Trusted Investment Consulting</span>
+              <h1>Connecting investors with verified land opportunities and trusted company partners.</h1>
+              <p>Jay U Groups acts as a consulting bridge for land and red sandalwood farming investments. We help clients understand partner companies, locations, documentation, nearby growth signals, and site visit planning before they decide.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary btn-lg" id="heroWhatsApp" target="_blank" rel="noopener" href="#">Enquire on WhatsApp</a>
+                <a class="btn btn-outline-dark btn-lg" href="#projects">View Current Phases</a>
+              </div>
+              <div class="trust-row" aria-label="Business highlights">
+                <span><strong id="statPlots">0+</strong> investor discussions</span>
+                <span><strong id="statDocs">0</strong> document checkpoints</span>
+                <span><strong id="statVisits">0+</strong> guided site visits</span>
+              </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+              <div class="map-board">
+                <div class="route-line route-a"></div>
+                <div class="route-line route-b"></div>
+                <div class="zone zone-one"></div>
+                <div class="zone zone-two"></div>
+                <div class="zone zone-three"></div>
+                <span class="pin pin-a"></span>
+                <span class="pin pin-b"></span>
+                <span class="pin pin-c"></span>
+                <div class="metric-panel">
+                  <span>Partner-led opportunities</span>
+                  <strong>Land | Farming | Commercial Growth Corridors</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-pad compact" id="services">
+          <div class="container">
+            <div class="section-heading">
+              <span class="eyebrow">Our Services</span>
+              <h2>Everything an investor needs before taking the next step.</h2>
+              <p>Consulting support for partner selection, long-term asset planning, documentation clarity, site visits, and ownership understanding.</p>
+            </div>
+            <div class="service-grid" id="serviceGrid"></div>
+          </div>
+        </section>
+
+        <section class="section-pad band" id="projects">
+          <div class="container">
+            <div class="section-heading split">
+              <div>
+                <span class="eyebrow">Current Phases</span>
+                <h2>Partner company opportunities, locations, facilities, and progress updates.</h2>
+              </div>
+              <p>Each phase card can be updated regularly with partner company information, availability, nearby facilities, and site visit notes.</p>
+            </div>
+            <div class="project-grid" id="projectGrid"></div>
+          </div>
+        </section>
+
+        <section class="section-pad" id="gallery">
+          <div class="container">
+            <div class="section-heading split">
+              <div>
+                <span class="eyebrow">Gallery</span>
+                <h2>Pictures and videos that auto-adjust neatly.</h2>
+              </div>
+              <p>Use real project photos later. For now the site includes clean placeholders and responsive frames.</p>
+            </div>
+            <div class="gallery-tools">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="layout">Layouts</button>
+              <button class="filter-btn" data-filter="site">Site Progress</button>
+              <button class="filter-btn" data-filter="facility">Facilities</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+          </div>
+        </section>
+
+        <section class="section-pad media-band" id="videos">
+          <div class="container">
+            <div class="section-heading split">
+              <div>
+                <span class="eyebrow">Video Updates</span>
+                <h2>YouTube videos and Instagram reels inside the website.</h2>
+              </div>
+              <p>Paste your latest links in the config area. Customers can watch without leaving the page.</p>
+            </div>
+            <div class="media-layout">
+              <div>
+                <h3>YouTube Walkthroughs</h3>
+                <div class="video-stack" id="youtubeGrid"></div>
+              </div>
+              <div>
+                <h3>Instagram Reels</h3>
+                <div class="reel-stack" id="reelGrid"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-pad compact" id="clients">
+          <div class="container">
+            <div class="section-heading">
+              <span class="eyebrow">Our Clients</span>
+              <h2>Built for investors who want guidance before committing.</h2>
+            </div>
+            <div class="client-grid" id="clientGrid"></div>
+          </div>
+        </section>
+
+        <section class="section-pad band" id="legal">
+          <div class="container">
+            <div class="section-heading split">
+              <div>
+                <span class="eyebrow">Legal Documentation</span>
+                <h2>Clear profiles for documents buyers normally ask about.</h2>
+              </div>
+              <p>Final document names and scans can be added later as PDF links, without adding a backend.</p>
+            </div>
+            <div class="legal-grid" id="legalGrid"></div>
+          </div>
+        </section>
+
+        <section class="section-pad" id="profiles">
+          <div class="container profile-layout">
+            <div class="section-heading">
+              <span class="eyebrow">Business Profile</span>
+              <h2>Jay U Groups works as a consulting bridge between investors and trusted company partners.</h2>
+              <p>We are not positioning ourselves as the direct owner of every opportunity. Our role is to help clients understand the partner company, investment concept, documentation, location value, and next steps with clarity.</p>
+            </div>
+            <div class="profile-panel">
+              <div>
+                <span>Consulting Focus</span>
+                <strong>Trusted company partner coordination, land and farming investment guidance, document review support, and guided site visits.</strong>
+              </div>
+              <div>
+                <span>Investor Promise</span>
+                <strong>Explain the company partner, location, facilities, paperwork, payment steps, risks, and site visit process in simple language.</strong>
+              </div>
+              <div>
+                <span>Growth Support</span>
+                <strong>Bring trusted company partners, publish phase updates, and support clients with clear communication as the business grows.</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-pad contact-band" id="contact">
+          <div class="container contact-layout">
+            <div>
+              <span class="eyebrow">Contact Us</span>
+              <h2>Let investors enquire through WhatsApp, email, or a simple saved form.</h2>
+              <p>No backend is required. The form opens the customer's email app, while WhatsApp opens a prefilled enquiry message. Later this can be upgraded to a CRM or automation tool.</p>
+              <div class="contact-actions">
+                <a class="btn btn-primary" id="contactWhatsApp" target="_blank" rel="noopener" href="#">WhatsApp Enquiry</a>
+                <a class="btn btn-light" id="contactEmail" href="#">Email Enquiry</a>
+              </div>
+            </div>
+            <form class="contact-form" id="leadForm">
+              <label>
+                Full name
+                <input type="text" name="name" autocomplete="name" required>
+              </label>
+              <label>
+                Phone number
+                <input type="tel" name="phone" autocomplete="tel" required>
+              </label>
+              <label>
+                Interested location or phase
+                <select name="interest" id="interestSelect"></select>
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="4" placeholder="Tell us your budget, preferred location, and visit timing."></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Prepare Email</button>
+                <button class="btn btn-outline-dark" type="button" id="copyLead">Copy Details</button>
+              </div>
+              <p class="form-note" id="formNote" role="status"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container footer-grid">
+          <div>
+            <span class="footer-brand">
+              <img src="./assets/jay-u-groups-logo.png" alt="" aria-hidden="true">
+              <strong>Jay U Groups | Real Estate</strong>
+            </span>
+            <p>Investment consulting for land, red sandalwood farming, trusted company partner coordination, phase updates, documentation, and enquiries.</p>
+          </div>
+          <div>
+            <a href="#services">Services</a>
+            <a href="#projects">Phases</a>
+            <a href="#legal">Legal</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
