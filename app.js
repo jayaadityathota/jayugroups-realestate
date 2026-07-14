@@ -162,7 +162,7 @@ function renderProjects() {
 
     const facilities = project.facilities.map((facility) => `<span>${facility}</span>`).join("");
     const artMarkup = Array.isArray(project.images) && project.images.length
-      ? `<div class="project-art has-image" style="--project-index:${index}"><div class="project-photo-stack">${project.images.map((image) => `<img class="project-image" src="${image}" alt="${project.name} visual" loading="lazy">`).join("")}</div></div>`
+      ? `<div class="project-art has-image" style="--project-index:${index}"><div class="project-photo-stack">${project.images.map((image) => `<div class="photo-frame"><img class="project-image" src="${image}" alt="${project.name} visual" loading="lazy"></div>`).join("")}</div></div>`
       : `<div class="project-art" style="--project-index:${index}"></div>`;
 
     grid.appendChild(createCard("project-card", `
@@ -184,7 +184,7 @@ function renderGallery(filter = "all") {
     .filter((item) => filter === "all" || item.type === filter)
     .forEach((item) => {
       const artMarkup = item.image
-        ? `<div class="gallery-art has-image"><img class="gallery-image" src="${item.image}" alt="${item.title}" loading="lazy"></div>`
+        ? `<div class="gallery-art has-image"><div class="photo-frame"><img class="gallery-image" src="${item.image}" alt="${item.title}" loading="lazy"></div></div>`
         : `<div class="gallery-art"></div>`;
 
       grid.appendChild(createCard("gallery-item", `
