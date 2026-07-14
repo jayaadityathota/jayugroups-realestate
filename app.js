@@ -47,7 +47,7 @@ const siteConfig = {
       status: "Bookings open for 410 Acres",
       summary: "Suitable for investors who want future commercial growth, nearby national highways, road connectivity, and developing neighborhoods.",
       facilities: ["Highway access", "Krishnapatnam Port", "Commercial growth", "Upcoming highway extension lines"],
-      images: ["./assets/1.png", "./assets/4.png", "./assets/6.png"]
+      images: ["./assets/1.png", "./assets/2.png", "./assets/4.png", "./assets/6.png"]
     },
     {
       name: "Phase 23 - National Highway Growth Belt",
