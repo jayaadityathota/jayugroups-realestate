@@ -46,7 +46,8 @@ const siteConfig = {
       location: "Mandal Road, Chejerla Village, Nellore Dist",
       status: "Bookings open for 410 Acres",
       summary: "Suitable for investors who want future commercial growth, nearby national highways, road connectivity, and developing neighborhoods.",
-      facilities: ["Highway access", "Krishnapatnam Port", "Commercial growth", "Upcoming highway extension lines"]
+      facilities: ["Highway access", "Krishnapatnam Port", "Commercial growth", "Upcoming highway extension lines"],
+      images: ["assets/1.png", "assets/4.png", "assets/6.png"]
     },
     {
       name: "Phase 23 - National Highway Growth Belt",
@@ -160,8 +161,12 @@ function renderProjects() {
     select.appendChild(option);
 
     const facilities = project.facilities.map((facility) => `<span>${facility}</span>`).join("");
+    const artMarkup = Array.isArray(project.images) && project.images.length
+      ? `<div class="project-art has-image" style="--project-index:${index}"><div class="project-photo-stack">${project.images.map((image) => `<img class="project-image" src="${image}" alt="${project.name} visual" loading="lazy">`).join("")}</div></div>`
+      : `<div class="project-art" style="--project-index:${index}"></div>`;
+
     grid.appendChild(createCard("project-card", `
-      <div class="project-art" style="--project-index:${index}"></div>
+      ${artMarkup}
       <div class="project-body">
         <div class="tag-row"><span class="tag">${project.status}</span><span class="tag">${project.location}</span></div>
         <h3>${project.name}</h3>
@@ -178,8 +183,12 @@ function renderGallery(filter = "all") {
   siteConfig.gallery
     .filter((item) => filter === "all" || item.type === filter)
     .forEach((item) => {
+      const artMarkup = item.image
+        ? `<div class="gallery-art has-image"><img class="gallery-image" src="${item.image}" alt="${item.title}" loading="lazy"></div>`
+        : `<div class="gallery-art"></div>`;
+
       grid.appendChild(createCard("gallery-item", `
-        <div class="gallery-art"></div>
+        ${artMarkup}
         <div class="gallery-caption">
           <strong>${item.title}</strong>
           <span>${item.caption}</span>

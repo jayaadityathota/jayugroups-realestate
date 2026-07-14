@@ -462,6 +462,59 @@ footer p {
     linear-gradient(135deg, #eff7ef, #dceef6);
   background-size: 28px 28px, 28px 28px, auto;
   overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-art.has-image,
+.gallery-art.has-image {
+  padding: 0;
+  background: #f3efe8;
+}
+
+.project-art.has-image::before,
+.project-art.has-image::after,
+.gallery-art.has-image::before,
+.gallery-art.has-image::after {
+  display: none;
+}
+
+.project-photo-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+  padding: 0.55rem;
+  height: 100%;
+}
+
+.project-image,
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.project-image {
+  aspect-ratio: 4 / 3;
+  min-height: 100px;
+}
+
+.gallery-image {
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-item:hover .gallery-image,
+.project-card:hover .project-image {
+  transform: scale(1.03);
+}
+
+.gallery-item:hover .gallery-art,
+.project-card:hover .project-art {
+  transform: translateY(-3px);
+  box-shadow: inset 0 0 0 1px rgba(23, 61, 46, 0.12);
 }
 
 .project-art::before,
