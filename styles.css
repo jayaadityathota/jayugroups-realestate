@@ -482,8 +482,24 @@ footer p {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-rows: minmax(0, auto);
-  gap: 0.5rem;
+  gap: 0.65rem;
   padding: 0;
+}
+
+.project-photo-stack.single-image {
+  grid-template-columns: 1fr;
+}
+
+.project-photo-stack.double-image {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-photo-stack.single-image .photo-frame {
+  aspect-ratio: 16 / 10;
+}
+
+.project-photo-stack.double-image .photo-frame {
+  aspect-ratio: 5 / 4;
 }
 
 .photo-frame {

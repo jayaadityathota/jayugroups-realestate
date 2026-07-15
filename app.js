@@ -62,7 +62,8 @@ const siteConfig = {
       location: "Bandaganipalle, Nellore Dist",
       status: "Coming soon",
       summary: "Designed for investors tracking long-term appreciation, road widening, and upcoming area demand.",
-      facilities: ["Growth corridor", "Flexible plot sizes", "Future access", "Value zone"]
+      facilities: ["Growth corridor", "Flexible plot sizes", "Future access", "Value zone"],
+      images: ["./assets/Phase25-1.png"]
     },
   ],
   gallery: [
@@ -162,8 +163,14 @@ function renderProjects() {
     select.appendChild(option);
 
     const facilities = project.facilities.map((facility) => `<span>${facility}</span>`).join("");
+    const imageCount = Array.isArray(project.images) ? project.images.length : 0;
+    const stackClassName = imageCount === 1
+      ? "project-photo-stack single-image"
+      : imageCount === 2
+        ? "project-photo-stack double-image"
+        : "project-photo-stack";
     const artMarkup = Array.isArray(project.images) && project.images.length
-      ? `<div class="project-art has-image" style="--project-index:${index}"><div class="project-photo-stack">${project.images.map((image) => `<div class="photo-frame"><img class="project-image" src="${image}" alt="${project.name} visual" loading="lazy"></div>`).join("")}</div></div>`
+      ? `<div class="project-art has-image" style="--project-index:${index}"><div class="${stackClassName}" data-count="${imageCount}">${project.images.map((image) => `<div class="photo-frame"><img class="project-image" src="${image}" alt="${project.name} visual" loading="lazy"></div>`).join("")}</div></div>`
       : `<div class="project-art" style="--project-index:${index}"></div>`;
 
     grid.appendChild(createCard("project-card", `
