@@ -47,7 +47,7 @@ const siteConfig = {
       status: "Bookings open for 410 Acres",
       summary: "Suitable for investors who want future commercial growth, nearby national highways, road connectivity, and developing neighborhoods.",
       facilities: ["Highway access", "Krishnapatnam Port", "Commercial growth", "Upcoming highway extension lines"],
-      images: ["./assets/1.png", "./assets/2.png", "./assets/4.png", "./assets/6.png"]
+      images: ["./assets/1.png", "./assets/2.png", "./assets/3.png", "./assets/4.png"]
     },
     {
       name: "Phase 23 - National Highway Growth Belt",
@@ -55,7 +55,7 @@ const siteConfig = {
       status: "Units available for Investors",
       summary: "Balanced option for investors looking at future infrastructure movement with affordable entry points.",
       facilities: ["Emerging infrastructure development zone", "Surrounded by national highway roads", "Transport route", "Peaceful setting"],
-      images: ["./assets/3.png", "./assets/7.png", "./assets/8.png", "./assets/9.png"]
+      images: ["./assets/3.png", "./assets/9.png"]
     },
     {
       name: "Phase 25 - Investment Layout",
