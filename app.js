@@ -55,7 +55,7 @@ const siteConfig = {
       status: "Units available for Investors",
       summary: "Balanced option for investors looking at future infrastructure movement with affordable entry points.",
       facilities: ["Emerging infrastructure development zone", "Surrounded by national highway roads", "Transport route", "Peaceful setting"],
-      images: ["./assets/9.png", "./assets/5.png"]
+      images: ["./assets/3.png", "./assets/9.png"]
     },
     {
       name: "Phase 25 - Investment Layout",
@@ -165,9 +165,9 @@ function renderProjects() {
     const facilities = project.facilities.map((facility) => `<span>${facility}</span>`).join("");
     const imageCount = Array.isArray(project.images) ? project.images.length : 0;
     const stackClassName = imageCount === 1
-      ? "project-photo-stack single-image"
+      ? "project-photo-stack project-photo-stack--single"
       : imageCount === 2
-        ? "project-photo-stack double-image"
+        ? "project-photo-stack project-photo-stack--double"
         : "project-photo-stack";
     const artMarkup = Array.isArray(project.images) && project.images.length
       ? `<div class="project-art has-image" style="--project-index:${index}"><div class="${stackClassName}" data-count="${imageCount}">${project.images.map((image) => `<div class="photo-frame"><img class="project-image" src="${image}" alt="${project.name} visual" loading="lazy"></div>`).join("")}</div></div>`
