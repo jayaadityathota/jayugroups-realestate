@@ -51,10 +51,11 @@ const siteConfig = {
     },
     {
       name: "Phase 23 - National Highway Growth Belt",
-      location: "Anumasamudram Peta, Nellore Dist",
+      location: "Dubagunta Village, Anumasamudram Peta, Nellore Dist",
       status: "Units available for Investors",
       summary: "Balanced option for investors looking at future infrastructure movement with affordable entry points.",
-      facilities: ["Emerging infrastructure development zone", "Surrounded by national highway roads", "Transport route", "Peaceful setting"]
+      facilities: ["Emerging infrastructure development zone", "Surrounded by national highway roads", "Transport route", "Peaceful setting"],
+      images: ["./assets/3.png", "./assets/7.png", "./assets/8.png", "./assets/9.png"]
     },
     {
       name: "Phase 25 - Investment Layout",
