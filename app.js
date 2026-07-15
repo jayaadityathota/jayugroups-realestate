@@ -55,7 +55,7 @@ const siteConfig = {
       status: "Units available for Investors",
       summary: "Balanced option for investors looking at future infrastructure movement with affordable entry points.",
       facilities: ["Emerging infrastructure development zone", "Surrounded by national highway roads", "Transport route", "Peaceful setting"],
-      images: ["./assets/3.png", "./assets/9.png"]
+      images: ["./assets/9.png", "./assets/5.png"]
     },
     {
       name: "Phase 25 - Investment Layout",
