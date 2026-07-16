@@ -10,34 +10,34 @@ const siteConfig = {
   },
   services: [
     {
-      icon: "LD",
-      title: "Investment Consulting",
-      text: "Explain land opportunities, red sandalwood farming concepts, growth corridors, partner company details, and the practical steps before investment."
+      icon: "LG",
+      title: "Land Opportunity Guidance",
+      text: "Understand available land opportunities, location advantages, road connectivity, surrounding growth corridors, and the practical next steps before you decide."
+    },
+    {
+      icon: "RS",
+      title: "Red Sandalwood Farmland Guidance",
+      text: "Get a simple overview of red sandalwood farmland opportunities, plantation-focused investment concepts, and the long-term ecosystem around cultivation and products."
     },
     {
       icon: "SV",
       title: "Site Visit Coordination",
-      text: "Guide investors with visit timing, weekend site visit planning, route clarity, nearby facilities, partner coordination, and follow-up notes."
+      text: "Plan your site visit with route details, location maps, convenient timing, nearby landmarks, and on-ground project guidance."
     },
     {
-      icon: "DC",
-      title: "Documentation Support",
-      text: "Organize required document profiles such as sale deed references, government approvals, survey details, payment stages, and registration flow."
+      icon: "DV",
+      title: "Document Verification Support",
+      text: "Receive clear document checklists covering sale deeds, 30-year link documents, ownership records, Adangal, pass book, and registration-related details for legal review."
     },
     {
-      icon: "UP",
-      title: "Partner Opportunity Updates",
-      text: "Regularly publish updated phases, current availability, partner company notes, location improvements, and nearby development highlights."
+      icon: "PU",
+      title: "Project Updates & Location Details",
+      text: "Explore current phases, completed projects, local photos, project highlights, addresses, and map links in one place."
     },
     {
-      icon: "VD",
-      title: "Video Walkthroughs",
-      text: "Embed YouTube videos and Instagram reels so clients can inspect the project from the website itself."
-    },
-    {
-      icon: "CS",
-      title: "Investor Enquiry Flow",
-      text: "Use WhatsApp, social engagement, and email with a clean path to automation."
+      icon: "ES",
+      title: "Enquiry & Ongoing Support",
+      text: "Connect through WhatsApp or email for project enquiries, follow-up information, site visit coordination, and the next steps in your decision process."
     }
   ],
   projects: [
@@ -47,7 +47,8 @@ const siteConfig = {
       status: "Bookings open for 410 Acres",
       summary: "Suitable for investors who want future commercial growth, nearby national highways, road connectivity, and developing neighborhoods.",
       facilities: ["Highway access", "Krishnapatnam Port", "Commercial growth", "Upcoming highway extension lines"],
-      images: ["./assets/1.png", "./assets/2.png", "./assets/3.png", "./assets/4.png"]
+      images: ["./assets/1.png", "./assets/2.png", "./assets/3.png", "./assets/4.png"],
+      mapUrl: "https://maps.app.goo.gl/CXH2iz8ejjanDeY59"
     },
     {
       name: "Phase 23 - National Highway Growth Belt",
@@ -55,7 +56,9 @@ const siteConfig = {
       status: "Units available for Investors",
       summary: "Balanced option for investors looking at future infrastructure movement with affordable entry points.",
       facilities: ["Emerging infrastructure development zone", "Surrounded by national highway roads", "Transport route", "Peaceful setting"],
-      images: ["./assets/5.png", "./assets/9.png"]
+      images: ["./assets/5.png", "./assets/9.png"],
+      mapEmbedUrl: "https://www.google.com/maps?q=Dubagunta%2C%20Nellore%20District%2C%20Andhra%20Pradesh&output=embed",
+      mapUrl: "https://maps.app.goo.gl/8pHm8cwacM3xJgzNA"
     },
     {
       name: "Phase 25 - Investment Layout",
@@ -64,16 +67,33 @@ const siteConfig = {
       summary: "Designed for investors tracking long-term appreciation, road widening, and upcoming area demand.",
       facilities: ["Growth corridor", "Flexible plot sizes", "Future access", "Value zone"],
       images: ["./assets/Phase25-1.png"]
-    },
+    }
   ],
   gallery: [
-    { title: "Layout Planning Frame", type: "layout", caption: "Use this slot for approved layout or marked plot visuals." },
-    { title: "Road Formation Update", type: "site", caption: "Add progress photos or short videos as work advances." },
-    { title: "Nearby Facilities", type: "facility", caption: "Show schools, hospitals, roads, markets, and transport points." },
-    { title: "Plot Demarcation", type: "site", caption: "Use for boundary, stones, roads, and phase-wise progress." },
-    { title: "Location Map Snapshot", type: "layout", caption: "Add a custom map graphic or route screenshot later." },
-    { title: "Visit Day Moments", type: "facility", caption: "Show buyer visit frames, area views, and surroundings." }
-  ],
+    { title: "Pedarikatla", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/g8ivtFMWdYUsZznf9", image: "./assets/project-photos/phase-1.jpg" },
+    { title: "Podili", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/dFrPTYy1vnzZWx6AA", image: "./assets/project-photos/phase-2.jpg" },
+    { title: "Batchalakurrapadu", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/9wQHQ6WiwXr2c4XN9", image: "./assets/project-photos/phase-3.jpg" },
+    { title: "Velugonda", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://goo.gl/maps/wB9snWUb9PFR4eEx8", image: "./assets/project-photos/phase-4.jpg" },
+    { title: "Vinukonda", address: "Guntur District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/Au4r5viHBvbZtyHG6?g_st=aw", image: "./assets/project-photos/phase-5.jpg" },
+    { title: "Pedakonduru", address: "Nellore District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/35SWHrT4FJZdFRBT9", image: "./assets/project-photos/phase-6.jpg" },
+    { title: "Ramulaveedu", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/F2qvYuoLRrsrjLRa7?g_st=aw", image: "./assets/project-photos/phase-7.jpg" },
+    { title: "Idupoor", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/aC3WnwjcSiLvexdW6?g_st=aw", image: "./assets/project-photos/phase-8.jpg" },
+    { title: "Padamati Rompidodla", address: "Nellore District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/cXPJbgNBvLehaWGM7?g_st=aw", image: "./assets/project-photos/phase-9.jpg" },
+    { title: "Gangapalem", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/gmsURnj8KiGoy7Rq8?g_st=aw", image: "./assets/project-photos/phase-10.jpg" },
+    { title: "Aakaveedu", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/xk3F8y327Zq6hmjZ8?g_st=aw", image: "./assets/project-photos/phase-11.jpg" },
+    { title: "Ayyannapalem", address: "Palnadu District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/rD69AYab8YVmzvDv9?g_st=aw", image: "./assets/project-photos/phase-12.jpg" },
+    { title: "Seetharama Puram", address: "Nellore District, Andhra Pradesh", mapUrl: "https://goo.gl/maps/vgf529BMrKAaK2zE9?g_st=aw", image: "./assets/project-photos/phase-13.jpg" },
+    { title: "Daddawada", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://goo.gl/maps/WccQrortGqUuXqMN9?g_st=aw", image: "./assets/project-photos/phase-14.jpg" },
+    { title: "Musunuru", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://goo.gl/maps/YQU9Cr3aDKrhmxnYA?g_st=aw", image: "./assets/project-photos/phase-15.jpg" },
+    { title: "Thegacherla", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://goo.gl/maps/3EHho2vLMckmX5US7?g_st=aw", image: "./assets/project-photos/phase-16.jpg" },
+    { title: "Gangapalem", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/xk3F8y327Zq6hmjZ8?g_st=aw", image: "./assets/project-photos/phase-17.jpg" },
+    { title: "Pragallapadu", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/4K7eBmV6KAdVNGZ99?g_st=aw", image: "./assets/project-photos/phase-18.jpg" },
+    { title: "Kalujuvvalapadu", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/pTwDurrsaHcFG7r2A?g_st=aw", image: "./assets/project-photos/phase-19.jpg" },
+    { title: "Baduguleru", address: "Prakasam District, Andhra Pradesh", mapUrl: "https://goo.gl/maps/PBp22BL5AjnynSmb7?g_st=aw", image: "./assets/project-photos/phase-20.jpg" },
+    { title: "Ponguru", address: "Nellore District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/zLfyq2rmKpZJ21iF6?g_st=iwb", image: "./assets/project-photos/phase-21.jpg" },
+    { title: "Tadivaripalli", address: "Markapuram District, Andhra Pradesh", mapUrl: "https://www.google.com/maps/place/15%C2%B036%2709.6%22N%2B79%C2%B017%2715.2%22E/@15.6026516,79.284977,17z", image: "./assets/project-photos/phase-22.jpg" },
+    { title: "Dubagunta", address: "Nellore District, Andhra Pradesh", mapUrl: "https://maps.app.goo.gl/8pHm8cwacM3xJgzNA", image: "./assets/project-photos/phase-23.jpg" }
+  ].map((project) => ({ ...project, type: "completed" })),
   youtubeVideos: [
     {
       title: "Project Walkthrough",
@@ -86,48 +106,49 @@ const siteConfig = {
   ],
   instagramReels: [
     {
-      title: "Latest Reel",
-      embedUrl: ""
+      title: "Jay U Groups Reel",
+      embedUrl: "https://www.instagram.com/reel/DagpuenIqPn/embed/",
+      postUrl: "https://www.instagram.com/reel/DagpuenIqPn/"
     }
   ],
   clients: [
     {
-      title: "First-Time Investors",
-      text: "Simple explanations for partner company details, location, budget, documents, registration, and what to check before committing."
+      title: "Red Sandalwood Cultivation",
+      text: "Our clients are actively focused on red sandalwood farming, building long-term value from cultivation and plantation development."
     },
     {
-      title: "Investment Buyers",
-      text: "Structured updates on trusted company partners, nearby developments, growth corridors, availability, and phase-wise opportunity."
+      title: "Integrated Product Ecosystem",
+      text: "Beyond farming, they are creating an end-to-end ecosystem for buying red sandalwood and transforming it into finished consumer and religious products."
     },
     {
-      title: "Family Decision Makers",
-      text: "Clear guidance around transport, hospitals, local markets, roads, visit convenience, and long-term asset planning."
+      title: "Hyderabad Manufacturing Unit",
+      text: "The manufacturing unit is located in Hyderabad and supports a portfolio of around 210 red sandalwood products, including religious idols, soaps, face creams, body scents, and more."
     }
   ],
   legal: [
     {
-      title: "Title & Ownership Profile",
-      text: "Summarize ownership chain, title clarity, partner company role, and document availability before sharing files privately."
+      title: "Sale Deed Legality",
+      text: "Buyers should review the sale deed for legal validity, clear title, correct property details, and all required registrations."
     },
     {
-      title: "Layout & Survey Details",
-      text: "List survey numbers, layout status, plot measurements, road widths, and phase boundaries."
+      title: "30-Year Link Documents",
+      text: "Verify the complete chain of link documents for the previous 30 years to understand title continuity and past transfers."
     },
     {
-      title: "Payment & Registration Flow",
-      text: "Explain token advance, agreement steps, registration process, timelines, and customer responsibilities."
+      title: "Current Ownership",
+      text: "Confirm the present owner, ownership records, survey details, and the legal authority of the party offering the property."
     },
     {
-      title: "Approvals Checklist",
-      text: "Keep a public checklist of approval categories while sharing actual documents and partner details only after enquiry."
+      title: "MOU & Spot Registration",
+      text: "Review any MOU, spot-registration process, and company documentation carefully to confirm the agreed terms and responsible entity."
     },
     {
-      title: "Customer KYC Notes",
-      text: "Mention buyer identity requirements, nominee details, and basic documentation needed for registration."
+      title: "Adangal & Pass Book",
+      text: "Cross-check the Adangal and pass book records for the land, including cultivation and revenue details where applicable."
     },
     {
-      title: "Disclaimer Profile",
-      text: "Add a clear note that customers should independently verify documents before purchase."
+      title: "100% Ownership Verification",
+      text: "Confirm that ownership, rights, and transferability are fully verified. Every buyer must cross-check all documents with an independent advocate or lawyer before proceeding."
     }
   ]
 };
@@ -173,13 +194,26 @@ function renderProjects() {
       ? `<div class="project-art has-image" style="--project-index:${index}"><div class="${stackClassName}" data-count="${imageCount}">${project.images.map((image) => `<div class="photo-frame"><img class="project-image" src="${image}" alt="${project.name} visual" loading="lazy"></div>`).join("")}</div></div>`
       : `<div class="project-art" style="--project-index:${index}"></div>`;
 
+    const mapMarkup = project.mapEmbedUrl
+      ? `<div class="project-map"><div class="project-map-heading"><span>Project location</span><a href="${project.mapUrl}" target="_blank" rel="noopener">Open map ↗</a></div><iframe src="${project.mapEmbedUrl}" title="Map for ${project.name}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>`
+      : project.mapUrl
+      ? `<a class="project-map-link" href="${project.mapUrl}" target="_blank" rel="noopener">View project location on map <span aria-hidden="true">↗</span></a>`
+      : "";
+
     grid.appendChild(createCard("project-card", `
       ${artMarkup}
       <div class="project-body">
-        <div class="tag-row"><span class="tag">${project.status}</span><span class="tag">${project.location}</span></div>
+        <div class="project-meta">
+          <span class="project-status">${project.status}</span>
+          <span class="project-location">${project.location}</span>
+        </div>
         <h3>${project.name}</h3>
         <p>${project.summary}</p>
-        <div class="facility-row">${facilities}</div>
+        ${mapMarkup}
+        <div class="project-features">
+          <span class="project-features-label">Highlights</span>
+          <div class="facility-row">${facilities}</div>
+        </div>
       </div>
     `));
   });
@@ -192,14 +226,16 @@ function renderGallery(filter = "all") {
     .filter((item) => filter === "all" || item.type === filter)
     .forEach((item) => {
       const artMarkup = item.image
-        ? `<div class="gallery-art has-image"><div class="photo-frame"><img class="gallery-image" src="${item.image}" alt="${item.title}" loading="lazy"></div></div>`
+        ? `<div class="gallery-art has-image"><div class="photo-frame"><img class="gallery-image" src="${item.image}" alt="${item.title}" loading="lazy"></div><div class="gallery-badge">Project Gallery</div></div>`
         : `<div class="gallery-art"></div>`;
 
       grid.appendChild(createCard("gallery-item", `
         ${artMarkup}
         <div class="gallery-caption">
+          <span class="gallery-kicker">Project Location</span>
           <strong>${item.title}</strong>
-          <span>${item.caption}</span>
+          <span class="gallery-location">${item.address}</span>
+          <a class="gallery-map-link" href="${item.mapUrl}" target="_blank" rel="noopener">View location on map <span aria-hidden="true">↗</span></a>
         </div>
       `));
     });
@@ -233,12 +269,10 @@ function renderMedia() {
       `));
       return;
     }
-    const iframe = document.createElement("iframe");
-    iframe.className = "reel-frame";
-    iframe.title = reel.title;
-    iframe.src = reel.embedUrl;
-    iframe.allow = "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share";
-    reelGrid.appendChild(iframe);
+    reelGrid.appendChild(createCard("instagram-reel-card", `
+      <iframe class="reel-frame" title="${reel.title}" src="${reel.embedUrl}" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      <a class="instagram-link" href="${reel.postUrl || reel.embedUrl}" target="_blank" rel="noopener">Watch on Instagram <span aria-hidden="true">↗</span></a>
+    `));
   });
 }
 
